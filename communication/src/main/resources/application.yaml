@@ -1,0 +1,9 @@
+server:
+  port: 8080
+restTemplate:
+  factory:
+    readTimeout: 5000 
+    connectTimeout: 3000
+  httpClient:
+    maxConnTotal: 100
+    maxConnPerRoute: 5 
