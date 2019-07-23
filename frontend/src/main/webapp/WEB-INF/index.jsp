@@ -1,40 +1,32 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="UTF-8"%>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>스프링부트 웹소켓 메시징</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.5/sockjs.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
-</head>
-<body>
-    <div>
-        <form id="frm" method="get" onsubmit="return false;">
-            <h3>메시지 : <input id="message" type="text" name="message"></h3>
-            <ol id="messages"></ol>
-            <input type="button" id="submitBtn" value="메시지보내기">
-        </form>
-    </div>
-
-<script >
-    $(document).ready(function () {
-        var messageList = $("#messages");
-        var socket = new SockJS('/stomp');
-        var stompClient = Stomp.over(socket);
-        stompClient.connect({}, function (frame) {
-        	
-            stompClient.subscribe("/topic/browser", function (data) {
-                var message = data.body;
-                messageList.append("<li>" + message +"</li>");
-                });
-            });
-        });
-/*       $("#submitBtn").off().on('click', function () {
-            $.ajax({
-                url : '/send/message?message='+$('#message').val(),
-                type : 'get'
-            });
-    });*/
-</script>
-</body>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="">
+		<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+		<meta name="generator" content="Jekyll v3.8.5">
+		<title>도저히 아이즈원 게임이라고 타이틀 못달겠다</title>
+		
+		<link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+		
+		<link rel="stylesheet" type="text/css" href="/static/css/index.css">
+	
+	</head>
+	<body class="text-center">
+		<form class="form-start">
+			<img class="mb-2" src="/static/img/main.jpg" alt="" width="300" height="200">
+			<h1 class="h3 mb-3 font-weight-normal">간단한 타자게임 입니다</h1>
+			<label for="inputUserName" class="sr-only"></label> 
+			<input id="inputUserName" class="form-control" placeholder="닉네임 입력" required autofocus>
+			<br>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">게임 시작</button>
+			<p class="mb-3 text-muted">since 2017.7.24</p>
+		</form>
+		
+		<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+		<script src="/webjars/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="/static/js/index.js"></script>
+	</body>
 </html>

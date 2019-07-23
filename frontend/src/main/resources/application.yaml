@@ -1,5 +1,14 @@
 spring:
   mvc:    view:      prefix: /WEB-INF/
       suffix: .jsp
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/static
+    add-mappings: true
+  thymeleaf:
+    cache: false
+  devtools:
+    livereload: 
+      enabled: true
 server:
   port: 8081
