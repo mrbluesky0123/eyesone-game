@@ -1,6 +1,5 @@
 package com.example.demo.domain.service;
 
-import java.util.HashMap;
 import java.util.Map;
 
 import org.springframework.stereotype.Service;
@@ -29,7 +28,8 @@ public class GameLogic implements GameService {
 		// TODO Auto-generated method stub
 		Game game = new Game();
 
-		game.setContents( geneateContent(level) );
+		game.setContent(geneateContent(level));
+		game.setLevel(Integer.valueOf(level));
 
 		return game;
 	}
@@ -37,9 +37,6 @@ public class GameLogic implements GameService {
 	@Override
 	public boolean checkAnswer(Map<String, String> map) {
 		// TODO Auto-generated method stub
-		System.out.println("content : " + map.get("content"));
-		System.out.println("answer : " + map.get("answer"));
-
 		if( map.get("content").equals(map.get("answer")) )
 			return true;
 		
