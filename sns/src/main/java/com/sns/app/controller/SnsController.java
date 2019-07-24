@@ -10,12 +10,14 @@ public class SnsController {
 //	@Autowired
 //	SnsService snsService;
 	
-	@RequestMapping(value = "/main")
+	@RequestMapping(value = "/snsLink")
 	public String main() {
 		
-		System.out.println("들어오나 ???");
+		System.out.println("===========snsLink=============in");
 		
 		return "/main/snsLink";
 	}
+	
+	
 	
 }
