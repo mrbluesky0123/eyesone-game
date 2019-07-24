@@ -1,0 +1,271 @@
+[2019-07-24 06:55:18,406](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 06:58:12,732](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 06:58:50,103](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 06:58:50,144](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 06:58:50,144](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 06:58:50,144](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 06:58:50,145](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 06:58:50,145](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 06:58:50,145](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 06:58:50,145](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 06:58:50,145](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:01:42,388](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:01:42,441](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:01:42,441](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:01:42,442](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:01:42,442](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:01:42,442](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:01:42,442](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:01:42,443](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:01:42,443](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:03:28,924](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:03:28,965](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:03:28,965](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:03:28,966](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:03:28,966](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:03:28,966](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:03:28,967](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:03:28,967](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:03:28,967](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:04:00,634](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:04:00,735](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:04:00,735](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:04:00,735](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:04:00,735](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:04:00,736](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:04:00,736](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:04:00,736](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:04:00,736](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:05:59,947](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:05:59,990](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:05:59,990](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:05:59,991](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:05:59,991](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:05:59,991](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:05:59,992](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:05:59,992](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:05:59,992](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:05:59,993](ERROR)sqlalchemy: aaaaaa
+[2019-07-24 07:06:45,729](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:06:45,758](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:06:45,758](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:06:45,758](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:06:45,759](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:06:45,759](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:06:45,759](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:06:45,759](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:06:45,760](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:06:45,760](ERROR)sqlalchemy: aaaaaa
+[2019-07-24 07:06:45,764](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x101d9f5f8; UserScore>,))' to '{}'
+[2019-07-24 07:08:35,620](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:08:35,676](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:08:35,677](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:08:35,677](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:08:35,677](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:08:35,678](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:08:35,679](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:08:35,679](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:08:35,679](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:08:35,680](ERROR)sqlalchemy: aaaaaa
+[2019-07-24 07:08:35,683](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x10398c6d8; UserScore>,))' to '{}'
+[2019-07-24 07:09:00,449](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:09:00,499](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:09:00,499](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:09:00,499](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:09:00,500](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:09:00,500](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:09:00,500](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:09:00,500](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:09:00,500](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:09:00,501](ERROR)sqlalchemy: aaaaaa
+[2019-07-24 07:09:00,504](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x1072e96d8; UserScore>,))' to '{}'
+[2019-07-24 07:17:25,739](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:17:25,791](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:17:25,791](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:17:25,792](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:17:25,792](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:17:25,792](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:17:25,792](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:17:25,793](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:17:25,793](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:17:25,794](ERROR)sqlalchemy: aaaaaa
+[2019-07-24 07:17:25,797](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x10b6ff780; UserScore>,))' to '{}'
+[2019-07-24 07:19:12,541](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:19:12,589](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:19:12,589](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:19:12,589](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:19:12,590](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:19:12,590](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:19:12,590](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:19:12,590](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:19:12,590](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:19:12,592](ERROR)sqlalchemy: aaaaaa
+[2019-07-24 07:19:12,595](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x10827d748; UserScore>,))' to '{}'
+[2019-07-24 07:22:37,466](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:22:37,521](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:22:37,521](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:22:37,522](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:22:37,522](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:22:37,522](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:22:37,522](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:22:37,523](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:22:37,523](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:22:37,524](ERROR)sqlalchemy: aaaaaa
+[2019-07-24 07:22:37,527](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x10d39e7b8; UserScore>,))' to '{}'
+[2019-07-24 07:24:30,467](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:24:30,514](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:24:30,515](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:24:30,515](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:24:30,515](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:24:30,516](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:24:30,516](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:24:30,516](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:24:30,516](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:26:38,402](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:26:38,440](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:26:38,440](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:26:38,440](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:26:38,441](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:26:38,441](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:26:38,441](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:26:38,441](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:32:04,296](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:32:04,344](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:32:04,344](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:32:04,344](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:32:04,345](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:32:04,345](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:32:04,345](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:32:04,346](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:32:04,346](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:40:35,031](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:40:35,090](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:40:35,091](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:40:35,091](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:40:35,092](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:40:35,092](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:40:35,092](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:40:35,092](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:40:35,093](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:42:11,106](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:42:11,152](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:42:11,152](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:42:11,152](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:42:11,152](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:42:11,153](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:42:11,153](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:42:11,153](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:42:11,153](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:42:30,837](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:42:30,875](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:42:30,875](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:42:30,875](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:42:30,876](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:42:30,876](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:42:30,876](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:42:30,876](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:42:30,877](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:45:15,823](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:45:15,867](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:45:15,867](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:45:15,868](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:45:15,868](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:45:15,868](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:45:15,868](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:45:15,868](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:45:15,868](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:46:47,419](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:47:01,286](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:47:01,326](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:47:01,326](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:47:01,327](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:47:01,327](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:47:01,327](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:47:01,328](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:47:01,328](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:47:01,328](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:47:01,542](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7f840d18f218>
+[2019-07-24 07:47:01,543](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 07:47:01,543](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:01,588](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 07:47:01,588](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 07:47:01,589](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 07:47:01,589](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:01,630](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 07:47:01,631](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 07:47:01,670](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 07:47:01,671](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:01,710](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 07:47:01,710](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 07:47:01,749](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 07:47:01,750](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:01,790](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 07:47:01,790](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 07:47:01,791](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 07:47:01,791](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:01,829](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 07:47:01,830](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:01,869](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 07:47:01,869](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:01,948](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f840d18f218> checked out from pool
+[2019-07-24 07:47:01,949](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 07:47:01,951](INFO)sqlalchemy.engine.base.Engine: INSERT INTO `SCORE_MST` (user_name, score, clear_time, session_id, reg_dt) VALUES (%s, %s, %s, %s, %s)
+[2019-07-24 07:47:01,951](INFO)sqlalchemy.engine.base.Engine: ('aaaaaaaaaaasw', 12, 1.21234, 'qwegihasidbnlweibrht', datetime.datetime(2019, 7, 24, 7, 47, 1, 326209))
+[2019-07-24 07:47:01,995](INFO)sqlalchemy.engine.base.Engine: COMMIT
+[2019-07-24 07:47:02,036](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f840d18f218> being returned to pool
+[2019-07-24 07:47:02,036](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f840d18f218> rollback-on-return
+[2019-07-24 07:47:02,075](ERROR)sqlalchemy: aaaaaa
+[2019-07-24 07:47:34,126](ERROR)sqlalchemy: {'session_id': 'qwegiha123sidbnlweibrht', 'user_name': 'aqqqaaasw', 'score': 12, 'clear_time': 1.21234}
+[2019-07-24 07:47:34,155](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 07:47:34,155](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 07:47:34,155](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 07:47:34,156](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 07:47:34,156](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 07:47:34,156](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 07:47:34,156](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 07:47:34,157](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 07:47:34,371](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7fc943925418>
+[2019-07-24 07:47:34,372](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 07:47:34,372](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:34,413](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 07:47:34,414](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 07:47:34,415](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 07:47:34,415](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:34,455](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 07:47:34,455](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 07:47:34,497](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 07:47:34,497](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:34,537](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 07:47:34,538](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 07:47:34,578](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 07:47:34,579](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:34,620](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 07:47:34,620](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 07:47:34,621](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 07:47:34,622](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:34,661](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 07:47:34,662](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:34,703](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 07:47:34,703](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 07:47:34,783](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fc943925418> checked out from pool
+[2019-07-24 07:47:34,784](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 07:47:34,785](INFO)sqlalchemy.engine.base.Engine: INSERT INTO `SCORE_MST` (user_name, score, clear_time, session_id, reg_dt) VALUES (%s, %s, %s, %s, %s)
+[2019-07-24 07:47:34,785](INFO)sqlalchemy.engine.base.Engine: ('aqqqaaasw', 12, 1.21234, 'qwegiha123sidbnlweibrht', datetime.datetime(2019, 7, 24, 7, 47, 34, 155057))
+[2019-07-24 07:47:34,826](INFO)sqlalchemy.engine.base.Engine: COMMIT
+[2019-07-24 07:47:34,867](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fc943925418> being returned to pool
+[2019-07-24 07:47:34,868](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fc943925418> rollback-on-return
+[2019-07-24 07:47:34,909](ERROR)sqlalchemy: aaaaaa
+[2019-07-24 07:47:34,915](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x104b16630; UserScore>,))' to '{}'
+[2019-07-24 07:47:34,916](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fc943925418> checked out from pool
+[2019-07-24 07:47:34,916](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 07:47:34,917](INFO)sqlalchemy.engine.base.Engine: SELECT `SCORE_MST`.id AS `SCORE_MST_id`, `SCORE_MST`.user_name AS `SCORE_MST_user_name`, `SCORE_MST`.score AS `SCORE_MST_score`, `SCORE_MST`.clear_time AS `SCORE_MST_clear_time`, `SCORE_MST`.session_id AS `SCORE_MST_session_id`, `SCORE_MST`.reg_dt AS `SCORE_MST_reg_dt` 
+FROM `SCORE_MST` ORDER BY `SCORE_MST`.score DESC, `SCORE_MST`.clear_time DESC 
+ LIMIT %s
+[2019-07-24 07:47:34,917](INFO)sqlalchemy.engine.base.Engine: (3,)
+[2019-07-24 07:47:34,957](DEBUG)sqlalchemy.engine.base.Engine: Col ('SCORE_MST_id', 'SCORE_MST_user_name', 'SCORE_MST_score', 'SCORE_MST_clear_time', 'SCORE_MST_session_id', 'SCORE_MST_reg_dt')
+[2019-07-24 07:47:34,958](DEBUG)sqlalchemy.engine.base.Engine: Row (1, 'aaaaaww', 12, 12.232, '112r2tgqewg', datetime.datetime(2019, 7, 24, 7, 40, 18))
+[2019-07-24 07:47:34,958](DEBUG)sqlalchemy.engine.base.Engine: Row (3, 'aqqqaaasw', 12, 1.21234, 'qwegiha123sidbnlweibrht', datetime.datetime(2019, 7, 24, 7, 47, 34))
+[2019-07-24 07:47:34,958](DEBUG)sqlalchemy.engine.base.Engine: Row (2, 'aaaaaaaaaaasw', 12, 1.21234, 'qwegihasidbnlweibrht', datetime.datetime(2019, 7, 24, 7, 47, 1))
+[2019-07-24 07:47:34,959](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fc943925418> being returned to pool
+[2019-07-24 07:47:34,959](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fc943925418> rollback-on-return, via agent
+[2019-07-24 07:47:34,959](INFO)sqlalchemy.engine.base.Engine: ROLLBACK
