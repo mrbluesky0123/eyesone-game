@@ -45,13 +45,19 @@
 <main role="main" class="flex-shrink-0">
   <div class="container">
     <h1 id="stopWatchId" class="mt-5">게임 준비중 입니다</h1>
-    <p id="contentId" class="lead"></p>
-    <form class="form-answer">
-		<input id="answerId" class="form-control" placeholder="정답 입력" required autofocus>
-		<br>
-		<button id="form-answer-submit" class="btn btn-lg btn-primary btn-block" type="submit">입력</button>
-	</form>
    
+    <table id="resultTable" class="table">
+	 <thead>
+	   <tr>
+	      <th>rank</th>
+	      <th>난이도</th>
+	      <th>닉네임</th>
+	      <th>time</th>
+	   </tr>
+	 </thead>
+	 <tbody>
+	 </tbody> 
+	</table>
   </div>
 </main>
 
@@ -69,7 +75,7 @@
 	
 	<script src="/webjars/sockjs-client/1.1.5/dist/sockjs.min.js"></script>
 	<script src="/webjars/stomp-websocket/2.3.3/stomp.min.js"></script>
-	<script src="/static/js/main.js"></script>
+	<script src="/static/js/result.js"></script>
 </body>
     
 </html>
