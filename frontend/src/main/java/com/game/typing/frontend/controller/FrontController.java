@@ -26,6 +26,13 @@ public class FrontController{
 		return "main";
 	}
 	
+	
+	@GetMapping("/result")
+	public String resultPage() {
+		return "result";
+	}
+	
+	
 	@PostMapping("/enter")
 	public String setUser(@RequestBody Map<String, String> body) {
 		System.out.println(body.toString());

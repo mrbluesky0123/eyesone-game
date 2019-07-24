@@ -1,22 +1,33 @@
 package com.example.demo.domain.model;
 
 public class Game {
-	private String contents;
+	private String content;
 	private int level;
 	private User user;
 	
-	public Game(String contents, int level) {
+	public Game(String content, int level) {
 		super();
-		this.contents = contents;
+		this.content = content;
 		this.level = level;
 	}
 
-	public String getContents() {
-		return contents;
+	public Game(String content, int level, User user) {
+		super();
+		this.content = content;
+		this.level = level;
+		this.user = user;
+	}
+
+	public Game() {
+		super();
+	}
+
+	public String getContent() {
+		return content;
 	}
 	
-	public void setContents(String contents) {
-		this.contents = contents;
+	public void setContent(String content) {
+		this.content = content;
 	}
 	
 	public int getLevel() {

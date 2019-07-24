@@ -1,0 +1,4 @@
+AWS Access Key ID [None]: AKIAT6IQHQ7SIKB7NPFV
+AWS Secret Access Key [None]: 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
+Default region name [None]: ap-northeast-2
+Default output format [None]: json
