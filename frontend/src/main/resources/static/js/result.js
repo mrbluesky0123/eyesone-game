@@ -17,17 +17,23 @@ $(document).ready(function() {
 		
 		var dataToJson = JSON.stringify(data);
 		
+		var html = '';
+		
+		//랭킹 정보 받아 오는 곳
 		$.ajax({
-			url : "/정답메소드",
+			url : "http://198.13.47.188:5000/score/sendresult",
 			method : "post",
 			contentType: "application/json",
 			data : dataToJson,
 			success : function(result) {
-				$('#answerId').attr('disabled','true');
-				$('#form-answer-submit').attr('disabled','true');
-				$('#contentId').text('');
-				$('#stopWatchId').text('정답입니다! 긴장하세요. 잠시후 게임이 시작됩니다.');
-				setTimeout(getContent(level),2000);
+				
+				//받아온 결과 result 화면 테이블에 출력
+				$.each(data, function(key, value){
+					html += '<tr>';
+					html += '<td>'+ value[0] + '</td>';
+					
+				});
+				
 			}
 		});
 		return false;
@@ -43,20 +49,23 @@ $(document).ready(function() {
 });
 
 
-function getContent(level){
-	$.ajax({
-		url : "/문제요청메소드?level=" + level,
-		method : "get",
-		success : function(res) {
-			$('#answerId').focus();
-			$('#stopWatchId').text('2초안에 입력하세요!');
-			$('#levelId').text('현재 난이도 : ' + res.level);
-			$('#contentId').text(res.content);
-			$('#answerId').attr('disabled','false');
-			$('#form-answer-submit').attr('disabled','false');
-		}
-	});
-}
+//function getContent(level){
+//	
+//	console.log
+//	
+//	$.ajax({
+//		url : "/문제요청메소드?level=" + level,
+//		method : "get",
+//		success : function(res) {
+//			$('#answerId').focus();
+//			$('#stopWatchId').text('2초안에 입력하세요!');
+//			$('#levelId').text('현재 난이도 : ' + res.level);
+//			$('#contentId').text(res.content);
+//			$('#answerId').attr('disabled','false');
+//			$('#form-answer-submit').attr('disabled','false');
+//		}
+//	});
+//}
 
 
 function notify(message){

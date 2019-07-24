@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v3.8.5">
-    <title>Sticky Footer Navbar Template · Bootstrap</title>
+    <title>도저히 아이즈원 게임이라고 타이틀 못달겠다</title>
 
 	<link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css">
 
@@ -27,13 +27,13 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
       	<li class="nav-item">
-           <a id="userNameId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">사용자명 : </a>
+           <a id="userNameId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">사용자명 :  ${userName}  </a>
         </li>
         <li class="nav-item">
-           <a id="levelId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">현재 난이도 : </a>
+           <a id="levelId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">현재 난이도 : ${level} </a>
         </li>
         <li class="nav-item">
-          <a id="timeLapseId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">경과 시간 : </a>
+           <a id="timeLapseId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"> </a>
         </li>
 
       </ul>
@@ -46,6 +46,7 @@
   <div class="container">
     <h1 id="stopWatchId" class="mt-5">게임 준비중 입니다</h1>
     <p id="contentId" class="lead"></p>
+    
     <form class="form-answer">
 		<input id="answerId" class="form-control" placeholder="정답 입력" required autofocus>
 		<br>

@@ -22,7 +22,7 @@
 			<input id="inputUserName" class="form-control" placeholder="닉네임 입력" required autofocus>
 			<br>
 			<button class="btn btn-lg btn-primary btn-block" type="submit">게임 시작</button>
-			<p class="mb-3 text-muted">since 2017.7.24</p>
+			<p class="mb-3 text-muted">since 2019.7.24</p>
 		</form>
 		
 		<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
