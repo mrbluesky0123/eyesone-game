@@ -1,0 +1,5 @@
+[2019-07-23 17:36:34,476](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw'}
+[2019-07-23 17:36:43,623](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_id': 'aaaaaaaaaaasw'}
+[2019-07-23 17:37:12,611](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw'}
+[2019-07-23 17:37:27,639](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw'}
+[2019-07-23 17:37:55,863](ERROR)sqlalchemy: {'session_id': 'qwegihasidbnlweibrht', 'user_name': 'aaaaaaaaaaasw'}

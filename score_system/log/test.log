@@ -1,0 +1,343 @@
+[2019-07-24 09:50:35,144](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 09:50:35,146](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 09:50:35,147](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 09:50:35,147](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 09:50:35,148](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 09:50:35,148](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 09:50:35,149](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 09:50:35,153](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 09:50:56,585](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 09:50:56,586](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 09:50:56,586](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 09:50:56,586](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 09:50:56,587](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 09:50:56,587](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 09:50:56,587](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 09:50:56,587](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 09:50:56,588](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x10e8a3828; UserScore>,))' to '{}'
+[2019-07-24 09:50:57,362](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7ff85f822a18>
+[2019-07-24 09:50:57,363](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 09:50:57,363](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:50:57,585](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 09:50:57,586](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 09:50:57,586](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 09:50:57,586](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:50:58,140](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 09:50:58,141](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 09:50:58,384](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 09:50:58,384](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:50:59,266](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 09:50:59,267](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 09:50:59,612](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 09:50:59,612](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:50:59,741](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 09:50:59,741](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 09:50:59,742](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 09:50:59,742](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:51:00,534](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 09:51:00,534](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:51:00,842](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 09:51:00,842](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:51:01,421](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7ff85f822a18> checked out from pool
+[2019-07-24 09:51:01,422](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 09:51:01,424](INFO)sqlalchemy.engine.base.Engine: SELECT `SCORE_MST`.id AS `SCORE_MST_id`, `SCORE_MST`.user_name AS `SCORE_MST_user_name`, `SCORE_MST`.score AS `SCORE_MST_score`, `SCORE_MST`.clear_time AS `SCORE_MST_clear_time`, `SCORE_MST`.session_id AS `SCORE_MST_session_id`, `SCORE_MST`.reg_dt AS `SCORE_MST_reg_dt` 
+FROM `SCORE_MST` 
+WHERE `SCORE_MST`.session_id = %s
+[2019-07-24 09:51:01,424](INFO)sqlalchemy.engine.base.Engine: ('qwegihasidbnlweibrht',)
+[2019-07-24 09:51:01,764](DEBUG)sqlalchemy.engine.base.Engine: Col ('SCORE_MST_id', 'SCORE_MST_user_name', 'SCORE_MST_score', 'SCORE_MST_clear_time', 'SCORE_MST_session_id', 'SCORE_MST_reg_dt')
+[2019-07-24 09:51:01,765](DEBUG)sqlalchemy.engine.base.Engine: Row (2, 'aaaaaaaaaaasw', 12, 1.21234, 'qwegihasidbnlweibrht', datetime.datetime(2019, 7, 24, 7, 47, 1))
+[2019-07-24 09:52:23,294](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7ff85f822a18> being returned to pool
+[2019-07-24 09:52:23,296](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7ff85f822a18> rollback-on-return
+[2019-07-24 09:52:31,038](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 09:52:31,039](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 09:52:31,039](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 09:52:31,039](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 09:52:31,040](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 09:52:31,040](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 09:52:31,040](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 09:52:31,040](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 09:52:31,041](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x10b548710; UserScore>,))' to '{}'
+[2019-07-24 09:52:34,533](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7fb2ce034e18>
+[2019-07-24 09:52:34,533](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 09:52:34,534](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:52:35,760](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 09:52:35,760](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 09:52:35,760](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 09:52:35,761](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:52:35,887](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 09:52:35,887](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 09:52:36,023](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 09:52:36,023](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:52:36,375](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 09:52:36,375](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 09:52:36,681](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 09:52:36,681](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:52:36,988](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 09:52:36,989](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 09:52:36,990](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 09:52:36,991](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:52:37,311](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 09:52:37,311](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:52:37,448](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 09:52:37,449](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:52:37,717](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fb2ce034e18> checked out from pool
+[2019-07-24 09:52:37,718](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 09:52:37,719](INFO)sqlalchemy.engine.base.Engine: SELECT `SCORE_MST`.id AS `SCORE_MST_id`, `SCORE_MST`.user_name AS `SCORE_MST_user_name`, `SCORE_MST`.score AS `SCORE_MST_score`, `SCORE_MST`.clear_time AS `SCORE_MST_clear_time`, `SCORE_MST`.session_id AS `SCORE_MST_session_id`, `SCORE_MST`.reg_dt AS `SCORE_MST_reg_dt` 
+FROM `SCORE_MST` 
+WHERE `SCORE_MST`.session_id = %s
+[2019-07-24 09:52:37,720](INFO)sqlalchemy.engine.base.Engine: ('qwegihasidbnlweibrht',)
+[2019-07-24 09:52:37,910](DEBUG)sqlalchemy.engine.base.Engine: Col ('SCORE_MST_id', 'SCORE_MST_user_name', 'SCORE_MST_score', 'SCORE_MST_clear_time', 'SCORE_MST_session_id', 'SCORE_MST_reg_dt')
+[2019-07-24 09:52:37,910](DEBUG)sqlalchemy.engine.base.Engine: Row (2, 'aaaaaaaaaaasw', 12, 1.21234, 'qwegihasidbnlweibrht', datetime.datetime(2019, 7, 24, 7, 47, 1))
+[2019-07-24 09:53:21,766](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x10b548710; UserScore>,))' to '{}'
+[2019-07-24 09:53:22,767](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7fb2cdaf6018>
+[2019-07-24 09:53:22,768](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 09:53:22,768](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:53:23,069](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 09:53:23,070](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 09:53:23,070](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 09:53:23,070](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:53:23,382](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 09:53:23,384](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 09:53:23,713](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 09:53:23,713](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:53:23,992](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 09:53:23,993](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 09:53:24,322](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 09:53:24,323](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:53:24,616](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 09:53:24,616](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 09:53:24,617](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 09:53:24,617](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:53:25,222](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 09:53:25,222](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:53:25,388](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 09:53:25,389](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:53:26,140](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fb2cdaf6018> checked out from pool
+[2019-07-24 09:53:26,140](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 09:53:26,142](INFO)sqlalchemy.engine.base.Engine: SELECT `SCORE_MST`.id AS `SCORE_MST_id`, `SCORE_MST`.user_name AS `SCORE_MST_user_name`, `SCORE_MST`.score AS `SCORE_MST_score`, `SCORE_MST`.clear_time AS `SCORE_MST_clear_time`, `SCORE_MST`.session_id AS `SCORE_MST_session_id`, `SCORE_MST`.reg_dt AS `SCORE_MST_reg_dt` 
+FROM `SCORE_MST` 
+WHERE `SCORE_MST`.session_id = %s
+[2019-07-24 09:53:26,142](INFO)sqlalchemy.engine.base.Engine: ('qwegihasinlweibrht',)
+[2019-07-24 09:53:26,453](DEBUG)sqlalchemy.engine.base.Engine: Col ('SCORE_MST_id', 'SCORE_MST_user_name', 'SCORE_MST_score', 'SCORE_MST_clear_time', 'SCORE_MST_session_id', 'SCORE_MST_reg_dt')
+[2019-07-24 09:54:03,236](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fb2ce034e18> being returned to pool
+[2019-07-24 09:54:03,238](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fb2ce034e18> rollback-on-return
+[2019-07-24 09:54:03,639](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fb2cdaf6018> being returned to pool
+[2019-07-24 09:54:03,639](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fb2cdaf6018> rollback-on-return
+[2019-07-24 09:54:13,527](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 09:54:13,528](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 09:54:13,528](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 09:54:13,528](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 09:54:13,528](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 09:54:13,529](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 09:54:13,529](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 09:54:13,529](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 09:54:13,530](DEBUG)sqlalchemy.orm.path_registry: set 'memoized_setups' on path 'EntityRegistry((<Mapper at 0x10afa5da0; UserScore>,))' to '{}'
+[2019-07-24 09:54:15,024](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7f9fea088218>
+[2019-07-24 09:54:15,026](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 09:54:15,026](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:54:15,953](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 09:54:15,953](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 09:54:15,954](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 09:54:15,954](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:54:16,077](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 09:54:16,078](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 09:54:16,221](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 09:54:16,221](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:54:16,828](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 09:54:16,829](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 09:54:17,752](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 09:54:17,752](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:54:18,059](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 09:54:18,059](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 09:54:18,061](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 09:54:18,061](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:54:18,365](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 09:54:18,365](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:54:18,673](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 09:54:18,673](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 09:54:20,208](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f9fea088218> checked out from pool
+[2019-07-24 09:54:20,209](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 09:54:20,210](INFO)sqlalchemy.engine.base.Engine: SELECT `SCORE_MST`.id AS `SCORE_MST_id`, `SCORE_MST`.user_name AS `SCORE_MST_user_name`, `SCORE_MST`.score AS `SCORE_MST_score`, `SCORE_MST`.clear_time AS `SCORE_MST_clear_time`, `SCORE_MST`.session_id AS `SCORE_MST_session_id`, `SCORE_MST`.reg_dt AS `SCORE_MST_reg_dt` 
+FROM `SCORE_MST` 
+WHERE `SCORE_MST`.session_id = %s
+[2019-07-24 09:54:20,210](INFO)sqlalchemy.engine.base.Engine: ('qwegihasinlweibrht',)
+[2019-07-24 09:54:20,515](DEBUG)sqlalchemy.engine.base.Engine: Col ('SCORE_MST_id', 'SCORE_MST_user_name', 'SCORE_MST_score', 'SCORE_MST_clear_time', 'SCORE_MST_session_id', 'SCORE_MST_reg_dt')
+[2019-07-24 09:57:00,866](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f9fea088218> being returned to pool
+[2019-07-24 09:57:00,868](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f9fea088218> rollback-on-return
+[2019-07-24 10:15:49,742](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 10:15:49,743](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 10:15:49,744](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 10:15:49,744](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 10:15:49,744](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 10:15:49,744](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 10:15:49,745](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 10:15:49,745](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 10:15:51,350](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7fd4f2042a18>
+[2019-07-24 10:15:51,350](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 10:15:51,351](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:15:51,655](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 10:15:51,656](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 10:15:51,656](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 10:15:51,656](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:15:51,795](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 10:15:51,795](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 10:15:51,963](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 10:15:51,964](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:15:52,270](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 10:15:52,270](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 10:15:53,186](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 10:15:53,186](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:15:54,186](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 10:15:54,187](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 10:15:54,188](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 10:15:54,188](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:15:54,793](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 10:15:54,793](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:15:55,791](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 10:15:55,791](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:15:57,187](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fd4f2042a18> checked out from pool
+[2019-07-24 10:15:57,188](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 10:15:57,190](INFO)sqlalchemy.engine.base.Engine: INSERT INTO `SCORE_MST` (user_name, score, clear_time, session_id, reg_dt) VALUES (%s, %s, %s, %s, %s)
+[2019-07-24 10:15:57,190](INFO)sqlalchemy.engine.base.Engine: ('zzsfaqwfr', 142, 1251.21234, 'qwegihasi1242515125dbnlweibrht', datetime.datetime(2019, 7, 24, 10, 15, 49, 742922))
+[2019-07-24 10:15:57,496](INFO)sqlalchemy.engine.base.Engine: COMMIT
+[2019-07-24 10:15:57,634](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fd4f2042a18> being returned to pool
+[2019-07-24 10:15:57,635](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7fd4f2042a18> rollback-on-return
+[2019-07-24 10:16:49,910](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 10:16:49,911](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 10:16:49,911](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 10:16:49,912](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 10:16:49,912](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 10:16:49,912](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 10:16:49,912](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 10:16:49,912](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 10:16:51,562](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7f942b834c18>
+[2019-07-24 10:16:51,562](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 10:16:51,563](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:16:51,869](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 10:16:51,870](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 10:16:51,870](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 10:16:51,870](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:16:52,791](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 10:16:52,791](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 10:16:53,097](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 10:16:53,097](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:16:53,425](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 10:16:53,428](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 10:16:53,711](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 10:16:53,712](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:16:54,019](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 10:16:54,020](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 10:16:54,021](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 10:16:54,021](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:16:54,327](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 10:16:54,327](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:16:54,632](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 10:16:54,633](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:16:55,248](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f942b834c18> checked out from pool
+[2019-07-24 10:16:55,249](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 10:16:55,251](INFO)sqlalchemy.engine.base.Engine: INSERT INTO `SCORE_MST` (user_name, score, clear_time, session_id, reg_dt) VALUES (%s, %s, %s, %s, %s)
+[2019-07-24 10:16:55,251](INFO)sqlalchemy.engine.base.Engine: ('zzsfaqwfr', 142, 1251.21234, 'qwegihasi1242515125dbnlweibrht', datetime.datetime(2019, 7, 24, 10, 16, 49, 910387))
+[2019-07-24 10:16:55,554](INFO)sqlalchemy.engine.base.Engine: COMMIT
+[2019-07-24 10:16:55,868](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f942b834c18> being returned to pool
+[2019-07-24 10:16:55,869](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f942b834c18> rollback-on-return
+[2019-07-24 10:19:37,804](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() started
+[2019-07-24 10:19:37,805](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop id
+[2019-07-24 10:19:37,805](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop user_name
+[2019-07-24 10:19:37,805](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop score
+[2019-07-24 10:19:37,805](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop clear_time
+[2019-07-24 10:19:37,806](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop session_id
+[2019-07-24 10:19:37,806](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) initialize prop reg_dt
+[2019-07-24 10:19:37,806](INFO)sqlalchemy.orm.mapper.Mapper: (UserScore|SCORE_MST) _post_configure_properties() complete
+[2019-07-24 10:19:41,005](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc58ef018>
+[2019-07-24 10:19:41,006](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 10:19:41,006](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:19:41,126](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 10:19:41,126](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 10:19:41,126](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 10:19:41,126](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:19:41,256](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 10:19:41,257](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 10:19:41,397](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 10:19:41,398](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:19:41,673](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 10:19:41,674](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 10:19:41,812](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 10:19:41,812](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:19:41,937](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 10:19:41,938](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 10:19:41,939](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 10:19:41,939](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:19:42,072](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 10:19:42,072](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:19:42,881](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 10:19:42,882](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:19:43,415](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc58ef018> checked out from pool
+[2019-07-24 10:19:43,416](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 10:19:43,417](INFO)sqlalchemy.engine.base.Engine: INSERT INTO `SCORE_MST` (user_name, score, clear_time, session_id, reg_dt) VALUES (%s, %s, %s, %s, %s)
+[2019-07-24 10:19:43,417](INFO)sqlalchemy.engine.base.Engine: ('zzsfaqwfr', 142, 1251.21234, 'qwegihasi1242515125dbnlweibrht', datetime.datetime(2019, 7, 24, 10, 19, 37, 804746))
+[2019-07-24 10:19:44,206](INFO)sqlalchemy.engine.base.Engine: COMMIT
+[2019-07-24 10:19:44,336](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc58ef018> being returned to pool
+[2019-07-24 10:19:44,337](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc58ef018> rollback-on-return
+[2019-07-24 10:20:10,320](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc4847818>
+[2019-07-24 10:20:10,322](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 10:20:10,323](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:20:10,624](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 10:20:10,625](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 10:20:10,625](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 10:20:10,625](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:20:10,931](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 10:20:10,932](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 10:20:11,240](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 10:20:11,240](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:20:11,384](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 10:20:11,384](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 10:20:11,530](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 10:20:11,530](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:20:11,854](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 10:20:11,854](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 10:20:11,855](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 10:20:11,855](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:20:12,168](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 10:20:12,168](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:20:12,475](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 10:20:12,476](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:20:13,083](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc4847818> checked out from pool
+[2019-07-24 10:20:13,083](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 10:20:13,084](INFO)sqlalchemy.engine.base.Engine: INSERT INTO `SCORE_MST` (user_name, score, clear_time, session_id, reg_dt) VALUES (%s, %s, %s, %s, %s)
+[2019-07-24 10:20:13,084](INFO)sqlalchemy.engine.base.Engine: ('zqwraqwfr', 22, 122.234, 'qwegih12515125dbnlweibrht', datetime.datetime(2019, 7, 24, 10, 20, 8, 379388))
+[2019-07-24 10:20:13,390](INFO)sqlalchemy.engine.base.Engine: COMMIT
+[2019-07-24 10:20:13,696](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc4847818> being returned to pool
+[2019-07-24 10:20:13,696](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc4847818> rollback-on-return
+[2019-07-24 10:20:57,004](DEBUG)sqlalchemy.pool.impl.QueuePool: Created new connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc5252e18>
+[2019-07-24 10:20:57,006](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'sql_mode'
+[2019-07-24 10:20:57,007](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:20:57,627](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 10:20:57,627](DEBUG)sqlalchemy.engine.base.Engine: Row ('sql_mode', '')
+[2019-07-24 10:20:57,627](INFO)sqlalchemy.engine.base.Engine: SHOW VARIABLES LIKE 'lower_case_table_names'
+[2019-07-24 10:20:57,627](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:20:57,923](DEBUG)sqlalchemy.engine.base.Engine: Col ('Variable_name', 'Value')
+[2019-07-24 10:20:57,923](DEBUG)sqlalchemy.engine.base.Engine: Row ('lower_case_table_names', '0')
+[2019-07-24 10:20:58,062](INFO)sqlalchemy.engine.base.Engine: SELECT DATABASE()
+[2019-07-24 10:20:58,062](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:20:59,471](DEBUG)sqlalchemy.engine.base.Engine: Col ('DATABASE()',)
+[2019-07-24 10:20:59,471](DEBUG)sqlalchemy.engine.base.Engine: Row ('score_system',)
+[2019-07-24 10:20:59,778](INFO)sqlalchemy.engine.base.Engine: show collation where `Charset` = 'utf8mb4' and `Collation` = 'utf8mb4_bin'
+[2019-07-24 10:20:59,778](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:21:03,158](DEBUG)sqlalchemy.engine.base.Engine: Col ('Collation', 'Charset', 'Id', 'Default', 'Compiled', 'Sortlen')
+[2019-07-24 10:21:03,158](DEBUG)sqlalchemy.engine.base.Engine: Row ('utf8mb4_bin', 'utf8mb4', 46, '', 'Yes', 1)
+[2019-07-24 10:21:03,160](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test plain returns' AS CHAR(60)) AS anon_1
+[2019-07-24 10:21:03,160](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:21:03,464](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test unicode returns' AS CHAR(60)) AS anon_1
+[2019-07-24 10:21:03,464](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:21:03,774](INFO)sqlalchemy.engine.base.Engine: SELECT CAST('test collated returns' AS CHAR CHARACTER SET utf8mb4) COLLATE utf8mb4_bin AS anon_1
+[2019-07-24 10:21:03,774](INFO)sqlalchemy.engine.base.Engine: ()
+[2019-07-24 10:21:08,415](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc5252e18> checked out from pool
+[2019-07-24 10:21:08,416](INFO)sqlalchemy.engine.base.Engine: BEGIN (implicit)
+[2019-07-24 10:21:08,417](INFO)sqlalchemy.engine.base.Engine: INSERT INTO `SCORE_MST` (user_name, score, clear_time, session_id, reg_dt) VALUES (%s, %s, %s, %s, %s)
+[2019-07-24 10:21:08,417](INFO)sqlalchemy.engine.base.Engine: ('zqwraqwfr', 22, 122.234, 'qwegih12515125dbnlweibrht', datetime.datetime(2019, 7, 24, 10, 20, 54, 354434))
+[2019-07-24 10:21:08,704](INFO)sqlalchemy.engine.base.Engine: ROLLBACK
+[2019-07-24 10:22:00,303](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc5252e18> being returned to pool
+[2019-07-24 10:22:00,305](DEBUG)sqlalchemy.pool.impl.QueuePool: Connection <_mysql.connection open to '198.13.47.188' at 0x7f8bc5252e18> rollback-on-return
+[2019-07-24 10:47:07,284](ERROR)eyesone: can only concatenate str (not "UUID") to str
+[2019-07-24 10:47:07,286](ERROR)eyesone: Error ocurred on setting session
+[2019-07-24 10:50:21,509](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': '6dd00924-c4ab-4e07-a667-888c1eef7300'}

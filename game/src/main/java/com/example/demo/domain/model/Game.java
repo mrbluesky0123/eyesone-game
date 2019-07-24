@@ -11,6 +11,17 @@ public class Game {
 		this.level = level;
 	}
 
+	public Game(String contents, int level, User user) {
+		super();
+		this.contents = contents;
+		this.level = level;
+		this.user = user;
+	}
+
+	public Game() {
+		super();
+	}
+
 	public String getContents() {
 		return contents;
 	}
