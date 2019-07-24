@@ -1,6 +1,7 @@
 package com.example.demo.domain.service;
 
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,29 +11,38 @@ import com.example.demo.domain.model.Game;
 @Service("gameLogic")
 public class GameLogic implements GameService {
 
-	@Override
-	public Game findByUserName(String userName) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Game> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
 	@Transactional(readOnly=true)
-	public String GetNextGame(String level) {
+	public String geneateContent(String level) {
 		// TODO Auto-generated method stub
-		String contents = "";
+		String content = "";
 		
 	    for (int i = 1; i <= Integer.valueOf(level); i++) {
 	    	char ch = (char) ((Math.random() * 11172) + 0xAC00) ;
-	    	contents += String.valueOf(ch);
+	    	content += String.valueOf(ch);
 	    }
 		
-		return contents;
+		return content;
+	}
+	
+	@Override
+	public Game requestNextGame(String level) {
+		// TODO Auto-generated method stub
+		Game game = new Game();
+
+		game.setContents( geneateContent(level) );
+
+		return game;
+	}
+
+	@Override
+	public boolean checkAnswer(Map<String, String> map) {
+		// TODO Auto-generated method stub
+		System.out.println("content : " + map.get("content"));
+		System.out.println("answer : " + map.get("answer"));
+
+		if( map.get("content").equals(map.get("answer")) )
+			return true;
+		
+		return false;
 	}
 }
