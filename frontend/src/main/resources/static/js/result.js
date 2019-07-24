@@ -49,23 +49,24 @@ $(document).ready(function() {
 });
 
 
-//function getContent(level){
-//	
-//	console.log
-//	
-//	$.ajax({
-//		url : "/문제요청메소드?level=" + level,
-//		method : "get",
-//		success : function(res) {
-//			$('#answerId').focus();
-//			$('#stopWatchId').text('2초안에 입력하세요!');
-//			$('#levelId').text('현재 난이도 : ' + res.level);
-//			$('#contentId').text(res.content);
-//			$('#answerId').attr('disabled','false');
-//			$('#form-answer-submit').attr('disabled','false');
-//		}
-//	});
-//}
+function result(){
+	
+	
+
+	$.ajax({
+		url : "http://198.13.47.188:5000/score/sendresult",
+		method : "post",
+		contentType: "application/json",
+		data : dataToJson,
+			success : function(result) {
+				debugger;
+				
+				
+			}
+		})
+	
+	
+}
 
 
 function notify(message){

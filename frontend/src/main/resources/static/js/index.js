@@ -16,18 +16,19 @@ debugger;
 			debugger;
 //			qwww123qasde124wewwwwwwibrht
 			console.log("result===>"+ result.response_body);
-			location.href = '/main'
+			
+			location.href = '/main/'+ result.response_body + '/'+$('#inputUserName').val()
 //			location.href = '/main?sessionId='+ result.response_body;
 		}
 	    ,error: function(request, status, error){
 	    	debugger;
 	    },
-	    complete : function(result){
-	    	debugger;
-	    	result = "qwww123qasde124wewwwwwwibrht";
-	    	console.log("data===>" + data);
-	    	location.href = '/main';
-	    }
+//	    complete : function(result){
+//	    	debugger;
+//	    	result = "qwww123qasde124wewwwwwwibrht";
+//	    	console.log("data===>" + data);
+//	    	location.href = '/main';
+//	    }
 	});
 	return false;
 });

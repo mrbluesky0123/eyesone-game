@@ -28,9 +28,14 @@
       <ul class="navbar-nav mr-auto">
       	<li class="nav-item">
            <a id="userNameId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">사용자명 :  ${userName}  </a>
+        	
         </li>
         <li class="nav-item">
            <a id="levelId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">현재 난이도 : ${level} </a>
+           <input id="levelNumber" type="hidden" />
+           <input id="sessionId" type="hidden" value="${sessionId }" />
+		   <input id="userName" type="hidden" value="${userName }" />
+		   <input id ="timeSec" type="hidden" />
         </li>
         <li class="nav-item">
            <a id="timeLapseId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"> </a>
@@ -51,6 +56,14 @@
 		<input id="answerId" class="form-control" placeholder="정답 입력" required autofocus>
 		<br>
 		<button id="form-answer-submit" class="btn btn-lg btn-primary btn-block" type="submit">입력</button>
+	</form>
+	
+	<form class="form-hidden" method="POST" >
+		<input type="hidden" id="sessionIdToResult">
+		<input type="hidden" id="userNameToResult">
+		<input type="hidden" id="levelToResult">
+		<input type="hidden" id="clearTimeToResult">
+		<input type="submit" id="btnToResult" hidden="true" >
 	</form>
    
   </div>

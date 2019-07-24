@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,17 +32,18 @@ public class FrontController{
 		return "index";
 	}
 	
-	@RequestMapping("/main")
-	public @ResponseBody ModelAndView mainPage(ModelMap model, HttpServletResponse res) {
+	@GetMapping("/main/{sessionId}/{userName}")
+	public ModelAndView mainPage(ModelMap model, @PathVariable("sessionId") String sessionId, @PathVariable("userName") String userName) {
 		
 		System.out.println("=====main controller=====");
 		
-		String response = res.toString();
+		System.out.println("sessionId===>"+sessionId);
+		System.out.println("userName===>"+userName);
 		
 //		System.out.println("res===>"+ response.);
 		//test data
-		model.put("sessionId", "qwww123qasde124wewwwwwwibrht");
-		model.put("userName", "yjh");
+		model.put("sessionId", sessionId);
+		model.put("userName", userName);
 		model.put("level", "1");
 		
 						
