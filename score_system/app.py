@@ -3,9 +3,12 @@ import json
 import app2
 import services
 import dbwork
+from flask_cors import CORS
 from common import logger
+import sys
 
 app = Flask(__name__)
+CORS(app)
 logger = logger.get_standard_logger('app')
 
 @app.route('/score/sendresult', methods=['POST'])
@@ -33,4 +36,5 @@ def test():
 
 
 if __name__=='__main__':
-    app.run('0.0.0.0')
+    port = int(sys.argv[1])
+    app.run(host='0.0.0.0', port=port)

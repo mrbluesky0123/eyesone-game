@@ -9,12 +9,12 @@ logger = logger.get_standard_logger('rediscache')
 session_prefix = 'game:sesseion_id:'
 
 def get_redis_config():
-    config = configwork.get_config()
+    # config = configwork.get_config()
+    config = {'Redis': {'host':'198.13.47.188', 'port':9762, 'session-timeout':120}}
     return config['Redis']
 
 def connect():
     redis_config = get_redis_config()
-    print('###' + str(type(redis_config)))
     try:
         connection = redis.Redis(host=redis_config['host'], port=int(redis_config['port']), db=0)
         connection.ping()

@@ -1,9 +1,10 @@
-import urllib2
+from urllib import request
+from urllib import parse
 import json
 
 call_url = '<IP>/community/announce'
 
 def call_broadcasting(requesrt):
-    request = urllib2.Request(url=call_url, data = json.dumps(request))
-    response = urllib2.urlopen(request)
-    return response.read()
+    req = request.Request(url=call_url, data = json.dumps(request))
+    res = request.urlopen(request)
+    return res.read().decide('utf-8')

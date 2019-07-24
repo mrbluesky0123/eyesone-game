@@ -10,9 +10,9 @@ import external
 logger = logger.get_standard_logger('service')
 
 def get_game_config():
-    config = configwork.get_config()
-    game_config = config['Game']
-    return game_config
+    # config = configwork.get_config()
+    config = {'Game': {'max-rank':5}}
+    return config['Game']
 
 def send_result_service(request):
     # Declare response
@@ -53,11 +53,13 @@ def send_result_service(request):
     # Get ranked data
     ranked_data = _get_ranked_data(raw_data, request, max_rank)
     # If rank is in max rank, push information
-    for i in range(0, len(ranked_data)):
+    '''
+    for i in range(0, len(ranked_data)-1):
         if ranked_data[i]['requested'] is True:
-            if ranked_data[i]['rank'] < max_rank:
+            # logger.error(str(type(max_rank)))
+            if int(ranked_data[i]['rank']) < int(max_rank):
                 external.call_broadcasting(ranked_data[i])
-    
+    '''
     # Close db connection
     dbwork.close(db_session)
     # Make response
@@ -73,6 +75,8 @@ def get_user_score_service(session_id, user_name):
     response = {'response_code': None, 'response_msg': None, 'response_body': None}
     db_session = dbwork.connect()
     user_score = dbwork.get_user_score(db_session, session_id, user_name)
+    # Close db connection
+    dbwork.close(db_session)
     if user_score is None:
         response['response_code'] = '1102'
         response['response_msg'] = 'No user data'
@@ -110,6 +114,7 @@ def register_user_service(request):
     # Connect to redis
     connection = rediscache.connect()
     set_result = rediscache.set_session(connection, session_id, user_id)
+    
     if set_result is False:
         response['response_code'] = '2102'
         response['response_msg'] = 'Session setting error!'
@@ -145,4 +150,6 @@ def _get_ranked_data(raw_data, request, max_rank):
 def test(request):
     db_session = dbwork.connect()
     dbwork.insert_game_result(db_session, request)
+    # Close db connection
+    dbwork.close(db_session)
     return "True"

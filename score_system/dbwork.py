@@ -11,7 +11,8 @@ from common import logger
 logger = logger.get_standard_logger('dbwork')
 
 def get_db_config():
-    config = configwork.get_config()
+    # config = configwork.get_config()
+    config = config = {'Database': {'host':'198.13.47.188', 'port':19762, 'username':'mrbluesky', 'password':'kang12!@'}}
     return config['Database']
 
 def connect():
@@ -45,6 +46,7 @@ def insert_game_result(db_session, game_result):
     except Exception as eee:
         logger.error(str(eee))
         logger.error('Failed to save on DB')
+        db_session.rollback()
         return False
 
     return True

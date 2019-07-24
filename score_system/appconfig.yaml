@@ -1,8 +1,6 @@
 Redis:
   host: 198.13.47.188
   port: 9762
-  get-key-name: get_rank_cache
-  set-key-name: set_rank_cache
   session-timeout: 120
 
 Game:
