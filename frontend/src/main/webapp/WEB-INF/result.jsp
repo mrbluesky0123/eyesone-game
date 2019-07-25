@@ -25,13 +25,18 @@
     	<div class="collapse navbar-collapse" id="navbarCollapse">
       		<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
-				    <a id="userNameId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">사용자명 : </a>
+				    <a id="userNameId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">사용자명 :  ${userName} </a>
 				 </li>
 				 <li class="nav-item">
-				    <a id="levelId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">현재 난이도 : </a>
+				    <a id="levelId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">최종 난이도 : ${level} </a>
+				 	<input id="levelNumber" type="hidden" value="${level} "/>
+           			<input id="sessionId" type="hidden" value="${sessionId }" />
+		   			<input id="userName" type="hidden" value="${userName }" />
+		   			<input id ="timeSec" type="hidden" value="${clearTime} " />
+				    
 				 </li>
 				 <li class="nav-item">
-				   <a id="timeLapseId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">경과 시간 : </a>
+				   <a id="timeLapseId" class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">경과 시간 : ${clearTime} </a>
 				 </li>
 
 			</ul>
@@ -42,13 +47,13 @@
 <!-- Begin page content -->
 <main role="main" class="flex-shrink-0">
   <div class="container">
-    <h1 id="stopWatchId" class="mt-5">게임 준비중 입니다</h1>
+    <h1 id="stopWatchId" class="mt-5">랭킹 현황</h1>
    
     <table id="resultTable" class="table">
 	 <thead>
 	   <tr>
 	      <th>rank</th>
-	      <th>난이도</th>
+	      <th>점수</th>
 	      <th>닉네임</th>
 	      <th>time</th>
 	   </tr>
@@ -59,6 +64,9 @@
 	 </tbody> 
 	</table>
   </div>
+  <input id="continueBtn" type="button" class="btn btn-lg btn-primary btn-block" value="재도전" onclick="onClickContinueBtn()"/>
+  <input id="newGameBtn" type="button" class="btn btn-lg btn-primary btn-block" value="처음으로" onclick="onClickNewGameBtn()"/>
+  <input id="myScore" type="hidden"  /> 
 </main>
 
 	
@@ -70,7 +78,7 @@
     <div class="row">
 		
 		<!-- 카카오 버튼  -->
-		<a id="kakao-link-btn" href="javascript:;">
+		<a id="kakao-link-btn" href="javascript:sendLinkKakao();">
 		<img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
 		</a>
 		<p>&nbsp;&nbsp;&nbsp;&nbsp; </p>
@@ -103,16 +111,28 @@
 	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 	<!-- 카카오 공유 내용 설정 로직 -->
 	<script type='text/javascript'>
+	 
+	 
 	  //<![CDATA[
 	    // // 사용할 앱의 JavaScript 키를 설정해 주세요.
 	    Kakao.init('f6b1425ca7fe6126b623fa4a1672dfcc');
 	    // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-	    Kakao.Link.createDefaultButton({
+function sendLinkKakao(){	    
+debugger;
+	  var world = '';
+	  var user = $("#userName").val();
+	  var sco = $("myScore").val();
+	  
+	  world = user+'님이 '+sco+'점을 획득했습니다. 도전하시겠습니까?' 
+      console.log(world);
+	  
+	    Kakao.Link.sendDefault({
+	      		    
 	      container: '#kakao-link-btn',
 	      objectType: 'feed',
 	      content: {
 	        title: 'IZ*ONE 키보드 게임',
-	        description: '#도전 #키보드 #워리어 ',
+	        description: world ,
 	        imageUrl: 'https://i.redd.it/obceohfe3jh21.jpg',
 	        link: {
 	          mobileWebUrl: 'http://localhost:8010/result',
@@ -142,6 +162,7 @@
 	      ]
 	    });
 	  //]]>
+	}		  
 	</script>
 
     

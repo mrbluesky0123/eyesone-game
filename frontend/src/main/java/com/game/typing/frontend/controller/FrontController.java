@@ -51,19 +51,18 @@ public class FrontController{
 	}
 	
 	
-	@GetMapping("/result")
-	public String resultPage() {
-		return "result";
+	@GetMapping("/result/{sessionId}/{userName}/{level}/{clearTime}")
+	public ModelAndView resultPage(ModelMap model, @PathVariable("sessionId") String sessionId, @PathVariable("userName") String userName, @PathVariable("level") int level, @PathVariable("clearTime") int clearTime ) {
+		System.out.println("=======result controller=====");
+		
+		model.put("sessionId", sessionId);
+		model.put("userName", userName);
+		model.put("level", level);
+		model.put("clearTime", clearTime);		
+		
+		return new ModelAndView("result", model);
 	}
 	
-	//
-	@PostMapping("/enter")
-	public String setUser(@RequestBody Map<String, String> body) {
-		System.out.println(body.toString());
-		System.out.println("hihi");
-		return "main";
-		
-	}
 	
 	@PostMapping("/popup")
 	public String test(@RequestBody String message) {

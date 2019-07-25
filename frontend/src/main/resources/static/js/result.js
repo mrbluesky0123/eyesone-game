@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 	var socket = new SockJS('/stomp');
 	var stompClient = Stomp.over(socket);
 	stompClient.connect({}, function(frame) {
@@ -7,64 +8,72 @@ $(document).ready(function() {
 		});
 	});
 	
-  
+	var userName = $('#userName').val();
+	var sessionId = $('#sessionId').val();
+	var clearTime = $('#timeSec').val();
+	var level = $('#levelNumber').val();
 	
-	$(".form-answer").submit(function() {
-		var data = {
-			'content' : $('#inputUserName').val(),
-			'answer' : $('#answerId').val()
-		};
-		
-		var dataToJson = JSON.stringify(data);
-		
-		var html = '';
-		
-		//랭킹 정보 받아 오는 곳
-		$.ajax({
-			url : "http://198.13.47.188:5000/score/sendresult",
-			method : "post",
-			contentType: "application/json",
-			data : dataToJson,
-			success : function(result) {
-				
-				//받아온 결과 result 화면 테이블에 출력
-				$.each(data, function(key, value){
-					html += '<tr>';
-					html += '<td>'+ value[0] + '</td>';
-					
-				});
-				
-			}
-		});
-		return false;
-	});
-
-	$("#answerId").keydown(function(key) {
-
-		if (key.keyCode == 13) {
-			$('#form-answer-submit').submit();
-		}
-
-	});
+	result(sessionId, userName, level, clearTime);
+	
 });
 
-
-function result(){
+//랭킹 정보 받아 오는 곳
+function result(sessionId, userName, level, clearTime){
+debugger;	
+	var data = {
+			'session_id' : sessionId,    
+			'user_name' : userName,
+			'score' : Number(level),
+			'clear_time' : Number(clearTime)
+	   }
+	   
+	var dataToJson = JSON.stringify(data); 
 	
+	console.log("result.js result()===>" + dataToJson);
 	
-
+	var html = '';
+	
 	$.ajax({
-		url : "http://198.13.47.188:5000/score/sendresult",
+		url : "http://198.13.47.188:5000/score/getrankdata",
 		method : "post",
 		contentType: "application/json",
 		data : dataToJson,
 			success : function(result) {
 				debugger;
 				
+			    
+				//받아온 결과 result 화면 테이블에 출력
+				for(i=0; i < result.response_body.length; i ++){
+debugger;				  	
+					if(result.response_body[i].requested == true)
+					{
+						html += '<tr style="color:red;">';
+						html += '<td style="color:red;">' + result.response_body[i].rank + '</td>';
+						html += '<td style="color:red;">' + result.response_body[i].score + '</td>';
+						html += '<td style="color:red;">' + result.response_body[i].user_name + '</td>';
+						html += '<td style="color:red;">' + result.response_body[i].clear_time + '</td>';
+						html += '</tr style="color:red;">';
+						
+						$("#myScore").val(result.response_body[i].score);
+					}
+					else
+					{
+						html += '<tr>';
+						html += '<td>' + result.response_body[i].rank + '</td>';
+						html += '<td>' + result.response_body[i].score + '</td>';
+						html += '<td>' + result.response_body[i].user_name + '</td>';
+						html += '<td>' + result.response_body[i].clear_time + '</td>';
+						html += '</tr>';
+					}
+					
+					
+				
+				}	
+				
+				$("#resultTable tbody").append(html);
 				
 			}
 		})
-	
 	
 }
 
@@ -85,6 +94,36 @@ function notify(message){
 	        '<span data-notify="message">{2}</span>' +
 	        '</div>'
 	    });
+}
+
+function onClickNewGameBtn(){
+	location.href = '/';
+}
+
+function onClickContinueBtn(){
+	var sessionChk = false;
+	   
+	$.ajax({
+		url : "http://198.13.47.188:5000/score/getrestartable/"+$('#sessionId').val(),
+		method : "get",
+		contentType: "application/json",
+		success : function(res) {
+		debugger;	
+			console.log("===== Session Check 요청 ======");
+			// Session ID check
+			if(sessionChk){
+				// Go to main	
+			}else{
+				alert("Session expired!!");
+			}
+		}
+		,error: function(request, status, error){
+
+		}
+	});
+	
+	
+
 }
 //answerId
 //

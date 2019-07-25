@@ -55,10 +55,7 @@ debugger;
 					endGame(sessionId, userName, level, clearTime);
 					
 				}
-				
-				
 			
-				
 			}
 		
 		});
@@ -96,13 +93,15 @@ debugger;
 			console.log("=====문제 받는 곳 main.js ======");
 			
 			$('#answerId').focus();
-			$('#stopWatchId').text('10초 안에 입력하세요!');
+			$('#stopWatchId').text('5초 안에 입력하세요!');
 			$('#levelId').text('현재 난이도 : ' + res.level);
 			$('#levelNumber').val(res.level);
 			$('#contentId').text(res.content);
 			$('#answerId').val('');
 			$('#answerId').attr('disabled',false);
 			$('#form-answer-submit').attr('disabled',false);
+			
+			
 		}
 		,error: function(request, status, error){
 	    	debugger;
@@ -129,6 +128,47 @@ function notify(message){
 	    });
 }
 
+
+
+
+//endGame
+function endGame(sessionId, userName, level, clearTime ){
+	debugger;
+	   var data = {
+			'session_id' : sessionId,    
+			'user_name' : userName,
+			'score' : Number(level),
+			'clear_time' : Number(clearTime)
+	   }
+	   
+	   var dataToJson = JSON.stringify(data); 
+	   
+	   console.log("endGame====2====>"+ dataToJson);
+	   
+		$.ajax({
+			url : "http://198.13.47.188:5000/score/sendresult"  ,
+			method : "post",
+			contentType: "application/json",
+			data : dataToJson,
+			success : function(res) {
+			debugger;	
+				console.log("===== 유저 점수 요청 ======");
+				console.log("점수요청 res" + res);
+				
+//				$('#sessionIdToResult').val(data.session_id);
+//				$('#sessionIdToResult').val(data.user_name);
+//				$('#sessionIdToResult').val(data.score);
+//				$('#sessionIdToResult').val(data.clear_time);
+				
+				//location.href = '/result'
+			    location.href = '/result/'+ data.session_id + '/'+data.user_name+'/'+data.score+'/'+data.clear_time
+							
+			}
+			,error: function(request, status, error){
+
+			}
+		});
+	}
 
 //경과시간 타이머 계산 
 function printTime(){
@@ -169,45 +209,6 @@ function printTime(){
 	setInterval(minusCount,1000);
 			
 }
-
-//endGame
-function endGame(sessionId, userName, level, clearTime ){
-	debugger;
-	   var data = {
-			'session_id' : sessionId,    
-			'user_name' : userName,
-			'score' : Number(level),
-			'clear_time' : Number(clearTime)
-	   }
-	   
-	    console.log("endGame===>" + data);
-	   var dataToJson = JSON.stringify(data); 
-	   
-	   console.log("endGame====2====>"+ dataToJson);
- console.log("여기느는")		
-		$.ajax({
-			url : "http://198.13.47.188:5000/score/sendresult"  ,
-			method : "post",
-			contentType: "application/json",
-			data : dataToJson,
-			success : function(res) {
-			debugger;	
-				console.log("===== 유저 점수 요청 ======");
-				console.log("점수요청 res" + res);
-				
-				$('#sessionIdToResult').val(data.session_id);
-				$('#sessionIdToResult').val(data.user_name);
-				$('#sessionIdToResult').val(data.score);
-				$('#sessionIdToResult').val(data.clear_time);
-				
-				location.href = '/result'
-							
-			}
-			,error: function(request, status, error){
-		    	debugger;
-		    }
-		});
-	}
 //answerId
 //
 //timeLapseId
