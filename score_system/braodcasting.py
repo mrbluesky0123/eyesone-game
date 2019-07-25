@@ -2,7 +2,7 @@ from urllib import request
 from urllib import parse
 import json
 
-call_url = 'eyesone-communication-serivce/community/announce'
+call_url = 'http://eyesone-communication-serivce:8090/community/announce'
 
 def call_broadcasting(request):
     message = make_message(request)
