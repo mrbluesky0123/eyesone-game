@@ -15,4 +15,5 @@ EXPOSE 5000
 RUN pip install -r requirements.txt
 ADD . /code
 ENV SERVER_PORT 5000
+RUN pytest
 CMD python app.py $SERVER_PORT

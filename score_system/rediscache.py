@@ -6,7 +6,7 @@ import json
 from common import logger
 
 logger = logger.get_standard_logger('rediscache')
-session_prefix = 'game:sesseion_id:'
+session_prefix = 'game:session_id:'
 
 def get_redis_config():
     # config = configwork.get_config()

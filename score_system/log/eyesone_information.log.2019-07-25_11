@@ -1,0 +1,74 @@
+[2019-07-25 10:32:19,403](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21, 'session_id': '1wfvsawertawt23t2'}
+[2019-07-25 10:32:24,958](ERROR)eyesone: (MySQLdb._exceptions.IntegrityError) (1062, "Duplicate entry '1wfvsawertawt23t2' for key 'session_id'")
+[SQL: INSERT INTO `SCORE_MST` (user_name, score, clear_time, session_id, reg_dt) VALUES (%s, %s, %s, %s, %s)]
+[parameters: ('jyh', 0, 1.21, '1wfvsawertawt23t2', datetime.datetime(2019, 7, 25, 10, 32, 19, 451125))]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2019-07-25 10:32:24,958](ERROR)eyesone: Failed to save on DB
+[2019-07-25 10:32:25,148](ERROR)eyesone: Failed to send result to redis.
+[2019-07-25 10:32:25,148](ERROR)eyesone: Need to be implemented.
+[2019-07-25 10:32:25,218](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21}
+[2019-07-25 10:32:25,218](ERROR)eyesone: Invalid input values.
+[2019-07-25 10:32:25,218](ERROR)eyesone: Got invalid input values. {'response_code': None, 'response_msg': None, 'response_body': None}
+[2019-07-25 10:32:25,223](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21, 'session_id': '1wfvsawertawt23t2'}
+[2019-07-25 10:32:28,457](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': [{'id': 21, 'user_name': 'jyh', 'score': 2022, 'clear_time': 1.234, 'session_id': 'vaiwoegqeogjawegweg', 'reg_dt': datetime.datetime(2019, 7, 24, 19, 16, 51), 'requested': False, 'rank': '1'}, {'id': 19, 'user_name': 'jyh', 'score': 200, 'clear_time': 1.234, 'session_id': 'safdbvno23r82r123', 'reg_dt': datetime.datetime(2019, 7, 24, 19, 14, 2), 'requested': False, 'rank': '2'}, {'id': 2, 'user_name': 'zzsfaqwfr', 'score': 142, 'clear_time': 1251.21, 'session_id': 'qwegihasi1242515125dbnlweibrht', 'reg_dt': datetime.datetime(2019, 7, 24, 10, 19, 37), 'requested': False, 'rank': '3'}, {'id': 18, 'user_name': 'gggggawwwqwfr', 'score': 110, 'clear_time': 3.234, 'session_id': 'qwww123teqwgeda124ht', 'reg_dt': datetime.datetime(2019, 7, 24, 17, 58, 17), 'requested': False, 'rank': '4'}, {'id': 17, 'user_name': 'gggggawwwqwfr', 'score': 110, 'clear_time': 3.234, 'session_id': 'qwww123teqwg24124124ht', 'reg_dt': datetime.datetime(2019, 7, 24, 17, 53, 26), 'requested': False, 'rank': '5'}, {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21, 'session_id': '1wfvsawertawt23t2', 'requested': True, 'rank': '5+'}]}
+[2019-07-25 10:32:28,461](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21}
+[2019-07-25 10:32:31,880](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': [{'id': 21, 'user_name': 'jyh', 'score': 2022, 'clear_time': 1.234, 'session_id': 'vaiwoegqeogjawegweg', 'reg_dt': datetime.datetime(2019, 7, 24, 19, 16, 51), 'requested': False, 'rank': '1'}, {'id': 19, 'user_name': 'jyh', 'score': 200, 'clear_time': 1.234, 'session_id': 'safdbvno23r82r123', 'reg_dt': datetime.datetime(2019, 7, 24, 19, 14, 2), 'requested': False, 'rank': '2'}, {'id': 2, 'user_name': 'zzsfaqwfr', 'score': 142, 'clear_time': 1251.21, 'session_id': 'qwegihasi1242515125dbnlweibrht', 'reg_dt': datetime.datetime(2019, 7, 24, 10, 19, 37), 'requested': False, 'rank': '3'}, {'id': 18, 'user_name': 'gggggawwwqwfr', 'score': 110, 'clear_time': 3.234, 'session_id': 'qwww123teqwgeda124ht', 'reg_dt': datetime.datetime(2019, 7, 24, 17, 58, 17), 'requested': False, 'rank': '4'}, {'id': 17, 'user_name': 'gggggawwwqwfr', 'score': 110, 'clear_time': 3.234, 'session_id': 'qwww123teqwg24124124ht', 'reg_dt': datetime.datetime(2019, 7, 24, 17, 53, 26), 'requested': False, 'rank': '5'}, {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21, 'requested': True, 'rank': '5+'}]}
+[2019-07-25 10:32:34,054](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': '6254d0c9-ce39-4dd6-a3c1-e33466077896'}
+[2019-07-25 10:32:35,262](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': 'fc1523d7-075e-4b2e-9695-4231b509dbe4'}
+[2019-07-25 10:32:36,487](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': None}
+[2019-07-25 10:32:42,449](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': {'id': 7, 'user_name': 'gggggaqwfr', 'score': 12, 'clear_time': 13.234, 'session_id': 'qwwwwww124weibrht', 'reg_dt': datetime.datetime(2019, 7, 24, 8, 27)}}
+[2019-07-25 10:34:14,153](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21, 'session_id': '1wfvsawertawt23t2'}
+[2019-07-25 10:34:19,455](ERROR)eyesone: (MySQLdb._exceptions.IntegrityError) (1062, "Duplicate entry '1wfvsawertawt23t2' for key 'session_id'")
+[SQL: INSERT INTO `SCORE_MST` (user_name, score, clear_time, session_id, reg_dt) VALUES (%s, %s, %s, %s, %s)]
+[parameters: ('jyh', 0, 1.21, '1wfvsawertawt23t2', datetime.datetime(2019, 7, 25, 10, 34, 14, 196774))]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2019-07-25 10:34:19,455](ERROR)eyesone: Failed to save on DB
+[2019-07-25 10:34:19,559](ERROR)eyesone: Failed to send result to redis.
+[2019-07-25 10:34:19,559](ERROR)eyesone: Need to be implemented.
+[2019-07-25 10:34:19,632](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21}
+[2019-07-25 10:34:19,633](ERROR)eyesone: Invalid input values.
+[2019-07-25 10:34:19,633](ERROR)eyesone: Got invalid input values. {'response_code': None, 'response_msg': None, 'response_body': None}
+[2019-07-25 10:34:19,638](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21, 'session_id': '1wfvsawertawt23t2'}
+[2019-07-25 10:34:24,315](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': [{'id': 21, 'user_name': 'jyh', 'score': 2022, 'clear_time': 1.234, 'session_id': 'vaiwoegqeogjawegweg', 'reg_dt': datetime.datetime(2019, 7, 24, 19, 16, 51), 'requested': False, 'rank': '1'}, {'id': 19, 'user_name': 'jyh', 'score': 200, 'clear_time': 1.234, 'session_id': 'safdbvno23r82r123', 'reg_dt': datetime.datetime(2019, 7, 24, 19, 14, 2), 'requested': False, 'rank': '2'}, {'id': 2, 'user_name': 'zzsfaqwfr', 'score': 142, 'clear_time': 1251.21, 'session_id': 'qwegihasi1242515125dbnlweibrht', 'reg_dt': datetime.datetime(2019, 7, 24, 10, 19, 37), 'requested': False, 'rank': '3'}, {'id': 18, 'user_name': 'gggggawwwqwfr', 'score': 110, 'clear_time': 3.234, 'session_id': 'qwww123teqwgeda124ht', 'reg_dt': datetime.datetime(2019, 7, 24, 17, 58, 17), 'requested': False, 'rank': '4'}, {'id': 17, 'user_name': 'gggggawwwqwfr', 'score': 110, 'clear_time': 3.234, 'session_id': 'qwww123teqwg24124124ht', 'reg_dt': datetime.datetime(2019, 7, 24, 17, 53, 26), 'requested': False, 'rank': '5'}, {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21, 'session_id': '1wfvsawertawt23t2', 'requested': True, 'rank': '5+'}]}
+[2019-07-25 10:34:24,320](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21}
+[2019-07-25 10:34:24,320](ERROR)eyesone: Invalid input values.
+[2019-07-25 10:34:24,321](ERROR)eyesone: Got invalid input values. {'response_code': None, 'response_msg': None, 'response_body': None}
+[2019-07-25 10:34:25,543](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': '158c2703-8a16-4ed2-8307-f5646abb7357'}
+[2019-07-25 10:34:26,061](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': '9f52959c-b123-4ac5-a2eb-63d2a5896743'}
+[2019-07-25 10:34:27,388](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': None}
+[2019-07-25 10:34:34,876](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': {'id': 7, 'user_name': 'gggggaqwfr', 'score': 12, 'clear_time': 13.234, 'session_id': 'qwwwwww124weibrht', 'reg_dt': datetime.datetime(2019, 7, 24, 8, 27)}}
+[2019-07-25 10:35:03,637](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21, 'session_id': '1wfvsawertaqqqqqqqqqwt23t2'}
+[2019-07-25 10:35:08,572](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21}
+[2019-07-25 10:35:08,573](ERROR)eyesone: Invalid input values.
+[2019-07-25 10:35:08,573](ERROR)eyesone: Got invalid input values. {'response_code': None, 'response_msg': None, 'response_body': None}
+[2019-07-25 10:35:08,579](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21, 'session_id': '1wfvsawertawt23t2'}
+[2019-07-25 10:35:13,180](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': [{'id': 21, 'user_name': 'jyh', 'score': 2022, 'clear_time': 1.234, 'session_id': 'vaiwoegqeogjawegweg', 'reg_dt': datetime.datetime(2019, 7, 24, 19, 16, 51), 'requested': False, 'rank': '1'}, {'id': 19, 'user_name': 'jyh', 'score': 200, 'clear_time': 1.234, 'session_id': 'safdbvno23r82r123', 'reg_dt': datetime.datetime(2019, 7, 24, 19, 14, 2), 'requested': False, 'rank': '2'}, {'id': 2, 'user_name': 'zzsfaqwfr', 'score': 142, 'clear_time': 1251.21, 'session_id': 'qwegihasi1242515125dbnlweibrht', 'reg_dt': datetime.datetime(2019, 7, 24, 10, 19, 37), 'requested': False, 'rank': '3'}, {'id': 18, 'user_name': 'gggggawwwqwfr', 'score': 110, 'clear_time': 3.234, 'session_id': 'qwww123teqwgeda124ht', 'reg_dt': datetime.datetime(2019, 7, 24, 17, 58, 17), 'requested': False, 'rank': '4'}, {'id': 17, 'user_name': 'gggggawwwqwfr', 'score': 110, 'clear_time': 3.234, 'session_id': 'qwww123teqwg24124124ht', 'reg_dt': datetime.datetime(2019, 7, 24, 17, 53, 26), 'requested': False, 'rank': '5'}, {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21, 'session_id': '1wfvsawertawt23t2', 'requested': True, 'rank': '5+'}]}
+[2019-07-25 10:35:13,185](INFO)eyesone: Received request: {'user_name': 'jyh', 'score': 0, 'clear_time': 1.21}
+[2019-07-25 10:35:13,185](ERROR)eyesone: Invalid input values.
+[2019-07-25 10:35:13,185](ERROR)eyesone: Got invalid input values. {'response_code': None, 'response_msg': None, 'response_body': None}
+[2019-07-25 10:35:14,386](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': 'f60a1e60-fa90-455d-bcaa-e1a237497730'}
+[2019-07-25 10:35:15,308](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': '129a7e31-0a19-4eb0-8e3d-ca6655432e9a'}
+[2019-07-25 10:35:15,943](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': None}
+[2019-07-25 10:35:21,303](INFO)eyesone: Response - {'response_code': '0000', 'response_msg': 'Success!', 'response_body': {'id': 7, 'user_name': 'gggggaqwfr', 'score': 12, 'clear_time': 13.234, 'session_id': 'qwwwwww124weibrht', 'reg_dt': datetime.datetime(2019, 7, 24, 8, 27)}}
+[2019-07-25 11:07:55,380](INFO)eyesone: Received request: {'session_id': 'vaiwoegqeogjawegweg', 'user_name': 'jyh', 'score': 0, 'clear_time': 1.234}
+[2019-07-25 11:08:25,358](INFO)eyesone: Received request: {'session_id': 'vaiwoegqeogjawegweg', 'user_name': 'jyh', 'score': 0, 'clear_time': 1.234}
+[2019-07-25 11:08:29,060](ERROR)eyesone: (MySQLdb._exceptions.IntegrityError) (1062, "Duplicate entry 'vaiwoegqeogjawegweg' for key 'session_id'")
+[SQL: INSERT INTO `SCORE_MST` (user_name, score, clear_time, session_id, reg_dt) VALUES (%s, %s, %s, %s, %s)]
+[parameters: ('jyh', 0, 1.234, 'vaiwoegqeogjawegweg', datetime.datetime(2019, 7, 25, 11, 8, 25, 391847))]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2019-07-25 11:08:29,061](ERROR)eyesone: Failed to save on DB
+[2019-07-25 11:08:29,214](ERROR)eyesone: Failed to send result to redis.
+[2019-07-25 11:08:29,214](ERROR)eyesone: Need to be implemented.
+[2019-07-25 11:09:30,599](INFO)eyesone: Received request: {'session_id': 'vaiwoegqeogjawegweg', 'user_name': 'jyh', 'score': 0, 'clear_time': 1.234}
+[2019-07-25 11:10:34,269](INFO)eyesone: Received request: {'session_id': 'vaiwoegqeogjawegweg', 'user_name': 'jyh', 'score': 0, 'clear_time': 1.234}
+[2019-07-25 11:10:40,699](ERROR)eyesone: Duplicated session id
+[2019-07-25 11:13:11,828](INFO)eyesone: Received request: {'session_id': 'vaiwoegqeogjawegweg', 'user_name': 'jyh', 'score': 0, 'clear_time': 1.234}
+[2019-07-25 11:13:16,312](ERROR)eyesone: Duplicated session id
+[2019-07-25 11:15:06,339](INFO)eyesone: Received request: {'session_id': 'vaiwoegqeogjawegweg', 'user_name': 'jyh', 'score': 0, 'clear_time': 1.234}
+[2019-07-25 11:15:14,105](ERROR)eyesone: Duplicated session id
+[2019-07-25 11:15:14,105](ERROR)eyesone: Failed to send result to redis.
+[2019-07-25 11:15:14,105](ERROR)eyesone: Need to be implemented.
+[2019-07-25 11:16:31,470](INFO)eyesone: Received request: {'session_id': 'vaiwoegqeogjawegweg', 'user_name': 'jyh', 'score': 0, 'clear_time': 1.234}
+[2019-07-25 11:16:35,760](ERROR)eyesone: Duplicated session id
+[2019-07-25 11:17:43,043](INFO)eyesone: Received request: {'session_id': 'vaiwoegqeogjawegweg', 'user_name': 'jyh', 'score': 12, 'clear_time': 3.234}
+[2019-07-25 11:17:46,490](ERROR)eyesone: Duplicated session id

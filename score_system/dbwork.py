@@ -1,12 +1,16 @@
+
 from sqlalchemy import create_engine, desc
 from sqlalchemy.orm import scoped_session, sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.exc import IntegrityError, InvalidRequestError
 from datetime import datetime
 from models import UserScore
 from flask_sqlalchemy import SQLAlchemy
+from common import logger
 import app
 import configwork
-from common import logger
+import MySQLdb
+import sqlalchemy
 
 logger = logger.get_standard_logger('dbwork')
 
@@ -43,6 +47,10 @@ def insert_game_result(db_session, game_result):
     try:                        
         db_session.add(game_result)
         db_session.commit()
+    except (IntegrityError, InvalidRequestError) as e1:
+        logger.error('Duplicated session id')
+        db_session.rollback()
+        return update_user_score(db_session, game_result.session_id, game_result.score, game_result.clear_time)
     except Exception as eee:
         logger.error(str(eee))
         logger.error('Failed to save on DB')
@@ -53,7 +61,6 @@ def insert_game_result(db_session, game_result):
 
 def get_rank_data(db_session, max_rank):
     # Get ranked data from db
-
     raw_data = db_session.query(UserScore)\
         .order_by(desc(UserScore.score), desc(UserScore.clear_time))\
         .limit(max_rank).all()
@@ -70,3 +77,16 @@ def get_user_score(db_session, session_id, user_name):
     if user_score is None:
         return None
     return user_score.as_dict()
+
+def update_user_score(db_session, session_id, score, clear_time):
+    # Get user score from db
+    user_score = db_session.query(UserScore).filter(UserScore.session_id==session_id).one_or_none()
+    if user_score is None:
+        return False
+    else:
+       user_score.score = score
+       user_score.clear_time = clear_time
+       db_session.commit()
+       return True
+    
+    

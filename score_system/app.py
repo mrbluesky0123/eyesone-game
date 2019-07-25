@@ -7,6 +7,7 @@ from flask_cors import CORS
 from common import logger
 import sys
 
+
 app = Flask(__name__)
 CORS(app)
 logger = logger.get_standard_logger('app')
@@ -16,9 +17,14 @@ def send_result():
     json_data = json.loads(request.data)
     return services.send_result_service(json_data)
 
-@app.route('/score/checkrestartable/<session_id>/<user_name>', methods=['GET'])
-def check_restartable(session_id, user_name):
-    return services.check_restartable_service(session_id, user_name)
+@app.route('/score/getrankdata', methods=['POST'])
+def get_rank_data():
+    json_data = json.loads(request.data)
+    return services.get_rank_data_service(json_data)
+
+@app.route('/score/checkrestartable/<session_id>', methods=['GET'])
+def check_restartable(session_id):
+    return services.check_restartable_service(session_id)
 
 @app.route('/score/getuserscore/<session_id>/<user_name>', methods=['GET'])
 def get_user_score(session_id, user_name):
