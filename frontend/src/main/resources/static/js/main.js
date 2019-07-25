@@ -23,7 +23,7 @@ debugger;
 		console.log("정답 입력 버튼이 클릭되었습니다.");
 		
 		$.ajax({
-			url : "http://eyesone-game-service/game/checkAnswer",
+			url : "http://eyesone-game-service:8088/game/checkAnswer",
 			method : "post",
 			contentType: "application/json",
 			data : dataToJson,
@@ -86,7 +86,7 @@ debugger;
 	console.log("level ==> "+ level);
 	
 	$.ajax({
-		url : "http://eyesone-game-service/game/getQuestion/" + level,
+		url : "http://eyesone-game-service:8088/game/getQuestion/" + level,
 		method : "get",
 		success : function(res) {
 		debugger;	
@@ -146,7 +146,7 @@ function endGame(sessionId, userName, level, clearTime ){
 	   console.log("endGame====2====>"+ dataToJson);
 	   
 		$.ajax({
-			url : "http://eyesone-rank-service/score/sendresult"  ,
+			url : "http://eyesone-rank-service:5000/score/sendresult"  ,
 			method : "post",
 			contentType: "application/json",
 			data : dataToJson,

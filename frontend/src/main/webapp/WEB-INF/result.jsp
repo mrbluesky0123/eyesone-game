@@ -132,7 +132,7 @@ debugger;
 	      objectType: 'feed',
 	      content: {
 	        title: 'IZ*ONE 키보드 게임',
-	        description: world ,
+	        description: '도전하세요!' ,
 	        imageUrl: 'https://i.redd.it/obceohfe3jh21.jpg',
 	        link: {
 	          mobileWebUrl: 'http://localhost:8010/result',

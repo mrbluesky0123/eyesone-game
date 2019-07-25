@@ -34,7 +34,7 @@ debugger;
 	var html = '';
 	
 	$.ajax({
-		url : "http://eyesone-rank-service/score/getrankdata",
+		url : "http://eyesone-rank-service:5000/score/getrankdata",
 		method : "post",
 		contentType: "application/json",
 		data : dataToJson,
@@ -104,7 +104,7 @@ function onClickContinueBtn(){
 	var sessionChk = false;
 	debugger;
 	$.ajax({
-		url : "http://eyesone-rank-service/score/checkrestartable/"+$('#sessionId').val(),
+		url : "http://eyesone-rank-service:5000/score/checkrestartable/"+$('#sessionId').val(),
 		method : "get",
 		contentType: "application/json",
 		success : function(res) {

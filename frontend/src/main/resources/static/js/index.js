@@ -8,7 +8,7 @@ $(".form-start").submit(function() {
 	console.log("data===>"+ data);
 
 	$.ajax({
-		url : "http://eyesone-rank-service/score/register_user",
+		url : "http://eyesone-rank-service:5000/score/register_user",
 		method : "post",
 		contentType: "application/json",
 		data : dataToJson,
