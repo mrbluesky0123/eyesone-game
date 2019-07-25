@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: eyesone-rank-deployment
+  labels:
+    app: rank
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: rank
+  template:
+    metadata:
+      labels:
+        app: rank
+    spec:
+      containers:
+      - name: rank
+        image: 271153858532.dkr.ecr.ap-northeast-2.amazonaws.com/team7-ms2-rank
+        imagePullPolicy: Always
+        ports: 
+        - containerPort: 5000
+          protocol: TCP

@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: eyesone-communication-deployment
+  labels:
+    app: communication
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: communication
+  template:
+    metadata:
+      labels:
+        app: communication
+    spec:
+      containers:
+      - name: communication
+        image: 271153858532.dkr.ecr.ap-northeast-2.amazonaws.com/team7-ms3-communication
+        imagePullPolicy: Always
+        ports: 
+        - containerPort: 8090
+          protocol: TCP

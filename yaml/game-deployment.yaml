@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: eyesone-game-deployment
+  labels:
+    app: game
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: game
+  template:
+    metadata:
+      labels:
+        app: game
+    spec:
+      containers:
+      - name: game
+        image: 271153858532.dkr.ecr.ap-northeast-2.amazonaws.com/team7-ms1-game
+        imagePullPolicy: Always
+        ports: 
+        - containerPort: 8088
+          protocol: TCP
