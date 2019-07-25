@@ -34,7 +34,7 @@ debugger;
 	var html = '';
 	
 	$.ajax({
-		url : "http://198.13.47.188:5000/score/getrankdata",
+		url : "http://eyesone-rank-service/score/getrankdata",
 		method : "post",
 		contentType: "application/json",
 		data : dataToJson,
@@ -102,23 +102,25 @@ function onClickNewGameBtn(){
 
 function onClickContinueBtn(){
 	var sessionChk = false;
-	   
+	debugger;
 	$.ajax({
-		url : "http://198.13.47.188:5000/score/getrestartable/"+$('#sessionId').val(),
+		url : "http://eyesone-rank-service/score/checkrestartable/"+$('#sessionId').val(),
 		method : "get",
 		contentType: "application/json",
 		success : function(res) {
-		debugger;	
+			debugger;	
 			console.log("===== Session Check 요청 ======");
 			// Session ID check
-			if(sessionChk){
-				// Go to main	
+			if(res.response_code == "0000"){
+				// Go to main
+				location.href = '/main/'+ $('#sessionId').val() + '/'+$('#userName').val();
 			}else{
 				alert("Session expired!!");
+				location.href = '/';
 			}
 		}
 		,error: function(request, status, error){
-
+			debugger;
 		}
 	});
 	
